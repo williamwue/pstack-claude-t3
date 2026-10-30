@@ -1,5 +1,9 @@
 # Codex tool mapping for pstack
 
+When T3 Code tools are available, read [the T3 mapping](t3-tools.md) before
+dispatching children or managing their results. It takes precedence for T3
+tool selection; the workflow and model policy below remain upstream-owned.
+
 pstack skills are written in Claude Code tool language (the `Skill` tool, the `Agent` tool, `AskUserQuestion`, Claude model names). On Codex the skills are the same files; only the tool names resolve differently. Read this when a pstack skill names a Claude tool, a driver or bundled skill, or a Claude model. This file is Codex-specific. Gemini CLI, opencode, Prime Agent, and other runtimes must use their own concrete tools, model names, and configuration paths.
 
 ## Tool actions

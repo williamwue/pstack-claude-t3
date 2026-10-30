@@ -5,6 +5,9 @@ description: poteto's agent style for concise, detailed responses, deliberate su
 
 # Poteto mode
 
+When T3 Code tools are available, read [the T3 mapping](references/t3-tools.md)
+before dispatching children, including when resuming delegated work.
+
 Bundled skills live at `../<name>/SKILL.md` from this file, so put this file's absolute path in every `poteto-agent` prompt.
 
 ## Platform Adaptation

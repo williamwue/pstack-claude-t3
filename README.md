@@ -1,5 +1,33 @@
 # pstack
 
+## T3 Code fork
+
+This repository is [pstack-claude 0.9.112](https://github.com/michael-denyer/pstack-claude/tree/22b5e137e945cb65dd29dac5fc703c13d83a00aa)
+with a [T3 Code tool mapping](plugins/pstack/skills/poteto-mode/references/t3-tools.md).
+Plugin names, workflows, models, configuration paths and runtime support stay
+upstream-owned. There is no separate OMS workflow, AIHero bundle, generator or
+release pipeline. The remaining documentation below is upstream's.
+
+To install this fork in Codex:
+
+```sh
+codex plugin marketplace add williamwue/pstack-claude-t3 --ref main
+codex plugin add pstack@pstack-claude
+```
+
+For Claude Code:
+
+```sh
+claude plugin marketplace add https://github.com/williamwue/pstack-claude-t3.git
+claude plugin install pstack@pstack-claude
+```
+
+Use `pstack:poteto-mode` after restarting the host. Older `oh-my-stack` installs
+are a separate plugin; these commands do not overwrite personal model files.
+Keep this fork current by merging `michael-denyer/pstack-claude` and reviewing
+the T3 mapping. Run upstream checks supported by the local host; report checks
+that require another operating system as skipped rather than provisioning one.
+
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/codenyer)
 
 Lauren Tan's [pstack](https://github.com/cursor/plugins/tree/main/pstack) is an opinionated Cursor skill stack that improves agent outcomes. This is a port for Claude Code, Codex, Pi, GitHub Copilot, Muse, and other agent harnesses. It tracks upstream and also carries named policy forks, each declared in [`tools/forks.json`](tools/forks.json).
